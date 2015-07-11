@@ -8,18 +8,18 @@ WordPress 是一个功能非常强大的博客系统，插件众多，易于扩�
 
 ## 说明
 
-WordPress需要搭配MySQL才能运行，您可以在启动WordPress应用时绑定一个MySQL服务来自动完成。
+WordPress 需要搭配 MySQL 数据库才能运行，您可以在启动 WordPress 应用时绑定一个 MySQL 服务来自动完成。
 
-您也可以通过手动设置下面的环境变量来指定MySQL连接：
+您也可以通过手动设置下面的环境变量来指定 MySQL 连接：
 
-- MYSQL\_DB\_HOST  数据库主机地址， 默认为${MYSQL_PORT_3306_TCP_ADDR｝
-- MYSQL\_DB\_PORT  数据库端口， 默认为 ${MYSQL_PORT_3306_TCP_PORT｝
-- MYSQL\_INSTANCE\_NAME 数据库名称
-- MYSQL_USERNAME  数据库用户名
-- MYSQL_PASSWORD  数据库密码
+* `MYSQL_DB_HOST`  数据库主机地址（默认为 `MYSQL_PORT_3306_TCP_ADDR`）
+* `MYSQL_DB_PORT`  数据库端口（ 默认为 `MYSQL_PORT_3306_TCP_PORT`）
+* `MYSQL_INSTANCE_NAME` 数据库名称
+* `MYSQL_USERNAME`  数据库用户名
+* `MYSQL_PASSWORD`  数据库密码
 
 ## 注意
 
-由于上传的文件如图片等会保存在容器中，容器重新部署可能会导致上传文件的丢失，因此不建议您用Wordpress存储重要文件。
+由于上传的文件如图片等会保存在容器中，容器重新部署可能会导致上传文件的丢失，因此不建议您用 WordPress 存储重要文件。
 
 
