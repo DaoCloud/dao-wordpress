@@ -6,7 +6,7 @@ WORKDIR /
 RUN apt-get update && \
     apt-get -yq install mysql-client curl && \
     rm -rf /app && \
-    curl -0L http://wordpress.org/wordpress-4.3.0.tar.gz | tar zxv && \
+    curl -0L https://wordpress.org/wordpress-4.3.tar.gz | tar zxv && \
     mv /wordpress /app && \
     rm -rf /var/lib/apt/lists/*
 
