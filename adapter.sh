@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ -n "$MYSQL_INSTANCE_NAME" ]
+if [[ -n "$MYSQL_INSTANCE_NAME" ]]
 then
     echo "info: Deploy at DaoCloud."
     export WORDPRESS_DB_HOST=$MYSQL_PORT_3306_TCP_ADDR":"$MYSQL_PORT_3306_TCP_PORT
