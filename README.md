@@ -12,7 +12,7 @@ WordPress 需要搭配 MySQL 数据库才能运行，当您部署在 DaoCloud �
 
 您也可以通过手动设置下面的环境变量来指定 MySQL 连接：
 
-- `WORDPRESS_DB_HOST` 数据库主机地址（默认为与其 `link` 的 `mysql` 容器的 IP 和3306 端口：`<mysql-ip>:3306`）
+- `WORDPRESS_DB_HOST` 数据库主机地址（默认为与其 `link` 的 `mysql` 容器的 IP 和 3306 端口：`<mysql-ip>:3306`）
 - `WORDPRESS_DB_USER` 数据库用户名（默认为 `root`）
 - `WORDPRESS_DB_PASSWORD` 数据库密码（默认为与其 `link` 的 `mysql` 容器提供的 `MYSQL_ROOT_PASSWORD` 变量的值）
 - `WORDPRESS_DB_NAME` 数据库名（默认为 `wordpress`）
@@ -44,7 +44,7 @@ $ docker run --name some-wordpress -e WORDPRESS_DB_HOST=10.1.2.3:3306 \
     -e WORDPRESS_DB_USER=... -e WORDPRESS_DB_PASSWORD=... -d wordpress
 ```
 
-## 使用 Stack 功能部署在自有主机上
+## 使用 Stack 功能部署 WordPress 于自有主机
 
 > Stack 是用一个 YAML 文件来描述容器配置和依赖的，这个描述文件完全兼容 Docker Compose 的语法。
 
